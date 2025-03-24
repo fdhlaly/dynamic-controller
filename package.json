@@ -1,0 +1,26 @@
+{
+  "name": "dynamic-controller",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdhlaly/dynamic-controller.git"
+  },
+  "author": "fadhil aly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fdhlaly/dynamic-controller/issues"
+  },
+  "homepage": "https://github.com/fdhlaly/dynamic-controller#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "5.0.0",
+    "express-validator": "^7.2.1",
+    "mongoose": "^8.12.2"
+  }
+}

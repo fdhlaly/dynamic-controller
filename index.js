@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import dynamicCrud from "./src/routes/api.js";
 
 const app = express();
 const env = dotenv.config().parsed;
@@ -18,11 +19,7 @@ db.once("open", () => {
   console.log(`Connected to MongoDB : ${env.DB_NAME}`);
 });
 
-app.get("/", (req, res) => {
-  res.json({
-    message: `Hello ${req.body.name}`,
-  });
-});
+// app.use("/categories", dynamicCrud(category));
 
 app.listen(env.PORT, () => {
   console.log(`listening on port : ${env.PORT}`);

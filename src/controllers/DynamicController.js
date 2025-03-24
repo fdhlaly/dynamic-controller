@@ -107,3 +107,5 @@ class DynamicController {
     }
   };
 }
+
+export default DynamicController;
